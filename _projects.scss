@@ -16,12 +16,14 @@
     .text-secondary{
         font-size: 2rem;
         margin-bottom: 2rem;
-    }
+
+    
 
 
     }
 
     
+    }
 
     
     &_items{
@@ -33,17 +35,17 @@
 
         
     }
+
     &_item{
         position: relative;
         border-bottom: 5px solid $secondary-color;
         overflow: hidden;
         cursor: pointer;
 
-
         img{
             width: 100%;
-
         }
+
         &::after{
             content: " ";
             position: absolute;
@@ -60,9 +62,33 @@
                 top: 0;
                 opacity: 0.9;
             }
-        }
 
-        
+            .projects_btns{
+                opacity: 1;
+            }
+        }
+    }
+
+    &_btns{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        text-align: center;
+    }
+    &_btns{
+        opacity: 0.5;
+        color: set-text-color($secondary-color );
+        @include transition-ease;
+    
+
+        &_hover{
+            color: set-text-color(set-text-color($secondary-color));
+        }
     }
 
     .social-icons{
