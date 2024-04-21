@@ -1,0 +1,22 @@
+.contact {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("images/home_image.jpg");
+  background-size: cover; }
+  .contact h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem; }
+  .contact_list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    font-size: 1.5rem; }
+  .contact .social-icons {
+    position: initial;
+    margin-top: 2rem; }
+
+/*# sourceMappingURL=_contact.css.map */
